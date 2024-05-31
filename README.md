@@ -41,7 +41,7 @@ The application consists of three main components:
 1. Clone the repository to your local machine:
 
    ```bash
-  git clone [https://github.com/your-username/calculator-and-timer.git](https://github.com/Csyntax/calculator.git)
+  git clone [https://github.com/Csyntax/calculator.git](https://github.com/Csyntax/calculator.git)
 
    ```
 
