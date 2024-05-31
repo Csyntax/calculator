@@ -1,0 +1,243 @@
+/* Reset CSS for consistent styling across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8cdda, #b8bfda); /* Background gradient */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Calculator container styling */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Header H1 styling */
+.header h1 {
+    font-size: 1.5rem; /* Font size reduced */
+    color: #fff;
+    background-color: #6a11cb; /* Deep purple background */
+    background-image: linear-gradient(315deg, #0a0253 0%, #2575fc 74%); /* Gradient background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center;
+}
+
+/* Calculator styling */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Display styling */
+.display {
+    background: rgba(0, 0, 0, 0.904); /* Dark background */
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Buttons container styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-template-rows: repeat(6, 1fr); /* Six rows */
+    gap: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn {
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(1.1); /* Scale up */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Number button styling */
+.btn.number {
+    background: linear-gradient(145deg, #e0e0e0, #ffffff); /* Light gradient background */
+    color: #333;
+}
+
+/* Number button hover effect */
+.btn.number:hover {
+    background: linear-gradient(145deg, #d4d4d4, #e0e0e0);
+}
+
+/* Operator button styling */
+.btn.operator {
+    background: linear-gradient(145deg, #007bff, #000000); /* Blue gradient background */
+    color: #fff;
+}
+
+/* Operator button hover effect */
+.btn.operator:hover {
+    background: linear-gradient(145deg, #052691, #082e81);
+}
+
+/* Equals button styling */
+.btn#equals {
+    background: linear-gradient(145deg, #28a745, #58d68d); /* Green gradient background */
+    color: #fff;
+    grid-column: span 2; /* Span two columns */
+}
+
+/* Equals button hover effect */
+.btn#equals:hover {
+    background: linear-gradient(145deg, #218838, #28a745);
+}
+
+/* AC and Del button styling */
+.btn#ac, .btn#del {
+    background: linear-gradient(145deg, #dc3545, #e74c3c); /* Red gradient background */
+    color: #fff;
+}
+
+/* AC and Del button hover effect */
+.btn#ac:hover, .btn#del:hover {
+    background: linear-gradient(145deg, #c82333, #dc3545);
+}
+
+/* Plus-minus and percent button styling */
+.btn#plus-minus, .btn#percent {
+    background: linear-gradient(145deg, #6c757d, #95a5a6); /* Gray gradient background */
+    color: #fff;
+}
+
+/* Plus-minus and percent button hover effect */
+.btn#plus-minus:hover, .btn#percent:hover {
+    background: linear-gradient(145deg, #5a6268, #6c757d);
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333; /* Dark background */
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff; /* White text color */
+}
+
+.footer p {
+    margin: 0;
+    color: #aaa; /* Light grey text */
+}
+
+.footer a {
+    color: #f39c12; /* Bright orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer link hover effect */
+.footer a:hover {
+    text-decoration: underline;
+    color: #e67e22; /* Darker orange on hover */
+}
+
+/* Timer controls styling */
+.timer-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.timer-controls input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background: #fff;
+    color: #333;
+}
+
+.timer-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(145deg, #007bff, #00c6ff); /* Blue gradient background */
+    color: #f5f5f5;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s; /* Transition effects */
+}
+
+/* Timer controls button hover effect */
+.timer-controls button:hover {
+    background: linear-gradient(145deg, #0056b3, #007bff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transform: scale(1.05); /* Scale up */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .timer-controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple calculator and timer application built using HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="calculator, timer, HTML, CSS, JavaScript">
+    <meta name="author" content="Csyntax">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <title>Calculator And Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header class="header">
+            <h1>Csyntax Simple Calculator And Timer</h1>
+        </header>
+        <div class="calculator">
+            <div id="display" class="display">0.00</div>
+            <div class="buttons">
+                <button class="btn" id="ac">AC</button>
+                <button class="btn" id="del">Del</button>
+                <button class="btn operator" id="plus-minus">+/-</button>
+                <button class="btn operator" id="percent">%</button>
+                <button class="btn operator" data-operator="/">/</button>
+                <button class="btn number" data-number="7">7</button>
+                <button class="btn number" data-number="8">8</button>
+                <button class="btn number" data-number="9">9</button>
+                <button class="btn operator" data-operator="*">*</button>
+                <button class="btn number" data-number="4">4</button>
+                <button class="btn number" data-number="5">5</button>
+                <button class="btn number" data-number="6">6</button>
+                <button class="btn operator" data-operator="-">-</button>
+                <button class="btn number" data-number="1">1</button>
+                <button class="btn number" data-number="2">2</button>
+                <button class="btn number" data-number="3">3</button>
+                <button class="btn operator" data-operator="+">+</button>
+                <button class="btn number" data-number="0">0</button>
+                <button class="btn number" data-decimal=".">.</button>
+                <button class="btn operator" data-operator="**">^</button>
+                <button class="btn operator" data-operator="(">(</button>
+                <button class="btn operator" data-operator=")">)</button>
+                <button class="btn" id="equals">=</button>
+            </div>
+        </div>
+        <div class="timer-controls">
+            <input type="text" id="timer-input" placeholder=" Input Timer in Secs">
+            <button id="enter-timer">Enter Timer</button>
+            <button id="start-timer">Start Timer</button>
+            <button id="stop-timer">Stop Timer</button>
+            <button id="reset-timer">Reset Timer</button> <!-- New reset timer button -->
+        </div>
+        <footer class="footer">
+            <p> &copy; <a href="https://github.com/Csyntax" target="_blank" rel="noopener">Csyntax</a> Calculator Project</p>
+        </footer>
+    </div>
+    <script src="./javaScript.js"></script>
+</body>
+</html>
